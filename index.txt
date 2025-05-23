@@ -135,7 +135,7 @@
             <button onclick="carregarImagem('CLV Médio de clientes por campanha')">📈 CLV</button>
             <button onclick="carregarImagem('Taxa de conversão')">🔮 conversão</button>
             <button onclick="carregarImagem('Heatmap de preferências')">💰 Heatmap</button>
-            <button onclick="carregarCSV(aula05-dados_clientes.csv)">📂 Carregar Dados</button>
+            <button onclick="carregarCSV('aula05-dados_clientes')">📂 Carregar Dados</button>
         </div>
 
         <div class="imagem-container" id="imagemContainer">
