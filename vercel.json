@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "frontend.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/frontend.html"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "main.py"
+    },
+    {
+      "src": "/usuarios",
+      "dest": "main.py"
+    },
+    {
+      "src": "/localidade/(?<local>[^/]+)",
+      "dest": "main.py"
+    },
+    {
+      "src": "/buscar",
+      "dest": "main.py"
+    },
+    {
+      "src": "/histograma-data",
+      "dest": "main.py"
+    }
+  ]
+}
